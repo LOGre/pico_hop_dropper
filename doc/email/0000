@@ -1,0 +1,50 @@
+Salut,
+
+j ai commence a prototyper et vous soumet l idee pour avoir des retours.
+
+Je me suis pose les contraintes de base suivantes:
+. anticiper les variables dont on a parle jusqu a present. Puisqu elles
+semblent un peu floues pour l instant, etre modulaire notament quant au
+nombre de doseur et differentes tailles,
+. utiliser du materiel facile a trouver (CASTO, voir CONRAD ...) et peu
+couteux,
+. simplicite de la mecanique: pas de moteur, s aider le plus possible
+de la gravite
+. realisable avec des outils simples et du temps, ou rapidement avec des
+machines outil (graveuse laser, CNC),
+. simplicite de l electronique de pilotage (pas de servos / PWMs),
+. reduire l encombrement si possible.
+
+J en suis arrive a un systeme de trappe ouvrable par une solenoide, et ce
+pour chaque recipient. La trappe se realise simplement avec des charnieres
+de casto. Le recipient se fixe sur une tige filetee avec une equerre
+realisable dans une latte alu, ce qui permet son reglage en hauteur. Le tout
+tient sur des tiges filetees qui permettront la fixation au dessus d un bac
+qui assurera la distribution dans la cuve. L electronique de pilotage du solenoide
+est tres simple.
+
+Pour l instant, je voulais valider le systeme de trappe, je n ai prototype
+qu un seul dropper. Quelques photos du prototype:
+https://github.com/texane/pico_hop_dropper/blob/master/doc/pic/scaled/SAM_2080.JPG
+https://github.com/texane/pico_hop_dropper/blob/master/doc/pic/scaled/SAM_2081.JPG
+https://github.com/texane/pico_hop_dropper/blob/master/doc/pic/scaled/SAM_2082.JPG
+https://github.com/texane/pico_hop_dropper/blob/master/doc/pic/scaled/SAM_2083.JPG
+
+Une video de demonstration, sans electronique de pilotage pour l instant:
+http://youtu.be/LW8Or0P_j-w
+
+Avec plusieurs dropper, cela pourrait ressembler a ca:
+https://github.com/texane/pico_hop_dropper/blob/master/doc/pic/scaled/SAM_2081.JPG
+
+N hesitez pas pour les critiques, surtout si ca vous semble une mauvaise direction.
+Notament les problemes qui pourraient apparaitre en pratique. J ai deja quelques
+modifs a faire:
+. un gabarit pour eviter les fuites entre le reipient et la trappe,
+. utiliser une solenoide plus grosse,
+. inserer une cale entre le marteau de la solenoide et la trappe pour mise
+a niveau.
+
+Pour l instant, j utilise mon compte mais github mais passerais rapidement
+sur l infrastructure du LOG (WIKI et GIT).
+
+Fabien.

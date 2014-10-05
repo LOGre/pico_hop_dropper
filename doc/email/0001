@@ -1,0 +1,33 @@
+Salut,
+
+j ouvre un fil pour la partie commande du projet pico hop
+dropper. Voila mes reflexions. Si vous voulez participer,
+n hesitez pas !
+
+A) les commandes a implementer:
+A.0) distribution d une dose: selon la facon dont est effectue
+le sequencage de la distribution, la  peut se faire
+. si c est le systeme central (ie. openplacos si j ai bien
+compris) qui sequence, alors une commande drop_next() appele
+par le systeme central suffi. Ou encore, et si le dispositif
+le permet, une commande drop(index or list) avec index or list
+les recipients,
+. si c est le microcontroleur qui sequence, alors le systeme
+central lui envoie une configuration contenant les differents
+delais (send_conf(...)).
+Je prefere la premiere methode, il me semble plus logique que
+le systeme central sequence la distribution.
+
+A.1) la remontee de status (get_status(...)): generale (ready,
+error, busy ...) et par dropper.
+
+B) la liaison physique
+Le mieux, c est d utiliser ce qui est deja en place. Si rien
+n est en place, Fred proposait RS485. Ca me va, mais j etais
+aussi partant pour CAN. En tous cas, j eviterais les SPI et
+I2C pour cet automate, ainsi que les laisons point a point
+(ie. serie classique).
+
+Je formaliserais ca sur le WIKI une fois qu on sera d accord,
+
+Fabien.

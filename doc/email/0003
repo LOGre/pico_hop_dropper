@@ -1,0 +1,17 @@
+A) Concernant la couche physique:
+Si j avais propose une topologie de bus, c est dans le cadre ou plusieurs
+auotmates sont a piloter. Il me semble que c est la cas dans la pico: sonde
+temperature, ventilation, dropper ...
+Le probleme de  la liaison point a point (type RS232 serie des PCs ou emulation
+via USB) est que ca ne passe pas a l echelle des lors qu il y a plus de 2 esclaves.
+Je propose de clarifier ce point: combien y aura t il d esclaves, qu elle est l archi
+grossiere de la pico a ce niveau ? A partir de la, on pourra aller vers une techno ou
+l autre et justifier les efforts.
+Mon avis si l effort en vaut le coup: utiliser une beaglebone ou RPI locale a la PICO.
+Cette carte tourne Openplacos. Puisqu elle est locale, l utilisation de SPI (avec blindage ...)
+devrait faire l affaire.
+
+B) Concernant les commandes:
+2 possibilites:
+. utilisation de commandes perso drop_next(i)
+. utilisation de standards du domaine automatisme (modbus ...)
